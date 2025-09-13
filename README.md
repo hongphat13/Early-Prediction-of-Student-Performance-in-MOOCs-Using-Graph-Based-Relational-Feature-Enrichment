@@ -86,7 +86,7 @@ Những đặc trưng này được hòa trộn với tín hiệu hành vi (user
 ├── README.md
 ├── requirements.txt
 │
-├── assets/                           # Ảnh minh hoạ README & tài liệu
+├── assets/                        
 │   ├── pipeline-overview.png
 │   ├── cloud-architecture.png
 │   └── system-architecture.png
@@ -96,20 +96,19 @@ Những đặc trưng này được hòa trộn với tín hiệu hành vi (user
 │   └── Kịch bản xây dựng và sử dụng cloud.docx
 │
 ├── data/
-│   ├── README.md                     # Mô tả schema & hướng dẫn bố trí dữ liệu
-│   ├── augmented/                    # Sau SMOTE/SVM-SMOTE (phase*/fold*, scaler, X_*, y_*)
-│   ├── enriched/                     # Đặc trưng graph-cluster, node2vec (theo phase)
-│   ├── merged/                       # Bảng hợp nhất đa nguồn (theo phase)
-│   └── processed/                    # Dữ liệu đã xử lý/split (train/val/test theo phase)
+│   ├── augmented/                    # Dữ liệu sau khi tăng cường SMOTE/SVM-SMOTE (phase*/fold*, scaler, X_*, y_*)
+│   ├── enriched/                     # Dữ liệu sau khi thực hiện làm giàu bằng graph-cluster, node2vec
+│   ├── merged/                       # Dữ liệu sau khi hợp nhất
+│   └── processed/                    # Dữ liệu đã xử lý và trích xuất đặc trưng
 │
 ├── docs/
 │   ├── course-annotation.xlsx        # Ghi chú khoá học/nhãn
-│   └── system-architecture.drawio    # Sơ đồ gốc có thể chỉnh sửa
+│   └── system-architecture.drawio    # Sơ đồ kiến trúc hệ thống
 │
 ├── notebooks/
 │   ├── DataQuality/                  # accuracy/completeness/consistency/timeliness
 │   ├── EDA/                          # EDA comments/courses/replies/video/user/problem
-│   ├── Enrichment/                   # classic-graph & node2vec (trích xuất & hợp nhất)
+│   ├── Enrichment/                   # classic-graph & node2vec
 │   ├── Enrichment-EDA/               # Thống kê bộ dữ liệu enrich
 │   ├── FeatureEngineering/
 │   │   ├── comment-reply/            # NLP + sentiment + gán nhãn
