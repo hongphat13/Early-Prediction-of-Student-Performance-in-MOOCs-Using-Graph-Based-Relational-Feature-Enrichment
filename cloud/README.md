@@ -1,4 +1,4 @@
-﻿[Ảnh 1](assets/cloud-img-01.png)
+<img src="assets\cloud-img-01.png" width="100%">
 
 1. **Lưu trữ: Tải các dữ liệu lên S3**  
    Bước 1: Tạo một S3 Bucket trên AWS
@@ -32,7 +32,7 @@
 - Query_results: lưu các truy vấn trong warehouse
 - Tools: lưu các model và scaler để phụ vụ việc dự đoán
 
-[Ảnh 2](assets/cloud-img-02.png)
+<img src="assets\cloud-img-02.png" width="100%">
 
 Trong folder data có các file:
 
@@ -81,7 +81,7 @@ Trong folder data có các file:
 - Xác nhận lại rằng chỉ có 2 chính sách được gán.
 - Nhấn Create role (Tạo vai trò)
 
-[Ảnh 3](assets/cloud-img-03.png)
+<img src="assets\cloud-img-03.png" width="100%">
 
 2. **Các bước tạo AWS Glue Crawler để quét dữ liệu từ S3**
 
@@ -91,7 +91,7 @@ Trong folder data có các file:
 - Ở thanh bên trái, chọn Crawlers
 - Nhấn nút Create crawler (Tạo crawler)
 
-[Ảnh 4](assets/cloud-img-04.png)
+<img src="assets\cloud-img-04.png" width="100%">
 
 Bước 2: Thông tin về crawler
 
@@ -129,7 +129,7 @@ Bước 2: Thông tin về crawler
 - Nhấn Create database
 - Đóng cửa sổ vừa tạo và quay lại cửa sổ trước
 
-[Ảnh 5](assets/cloud-img-05.png)
+<img src="assets\cloud-img-05.png" width="100%">
 
 Bước 7: Chọn database và lịch chạy
 
@@ -150,9 +150,9 @@ Bước 7: Chọn database và lịch chạy
 - Nhấn Run crawler để chạy crawler lần đầu tiên
 - Đợi vài phút để crawler hoàn tất quét dữ liệu
 
-[Ảnh 6](assets/cloud-img-06.png)
+<img src="assets\cloud-img-06.png" width="100%">
 
-[Ảnh 7](assets/cloud-img-07.png)
+<img src="assets\cloud-img-07.png" width="100%">
 
 3. **Xác minh bảng vừa tạo trong Glue Catalog**
 
@@ -185,33 +185,33 @@ Bước 7: Chọn database và lịch chạy
 
   Bước 6: Chạy truy vấn SQL
 
-- Trong khung Query Editor, dán đoạn truy vấn sau: SELECT \* FROM "analyticsworkshopdb"."course_info" limit 10;
+- Trong khung Query Editor, dán đoạn truy vấn sau: SELECT * FROM "analyticsworkshopdb"."course_info" limit 10;
 - Nhấn Run để chạy truy vấn và xem kết quả phân tích dữ liệu.
 
 3. **Tính chất lượng dữ liệu**  
    Bước 1: Trong AWS Glue Database, chọn database là analyticsworkshopdb
 
-[Ảnh 8](assets/cloud-img-08.png)
+<img src="assets\cloud-img-08.png" width="100%">
 
-[Ảnh 9](assets/cloud-img-09.png)
+<img src="assets\cloud-img-09.png" width="100%">
 
 Bước 2: Chọn bảng cần tính chất lượng dữ liệu
 
-[Ảnh 10](assets/cloud-img-10.png)  
+<img src="assets\cloud-img-10.png" width="100%">  
 Bước 3: Thêm tập các quality rules
 
-[Ảnh 11](assets/cloud-img-11.png)
+<img src="assets\cloud-img-11.png" width="100%">
 
-[Ảnh 12](assets/cloud-img-12.png)
+<img src="assets\cloud-img-12.png" width="100%">
 
-[Ảnh 13](assets/cloud-img-13.png)
+<img src="assets\cloud-img-13.png" width="100%">
 
 (các tiêu chí quality mà AWS Glue gợi ý)  
 Bước 4: Chạy và xem kết quả
 
-[Ảnh 14](assets/cloud-img-14.png)
+<img src="assets\cloud-img-14.png" width="100%">
 
-[Ảnh 15](assets/cloud-img-15.png)
+<img src="assets\cloud-img-15.png" width="100%">
 
 4. **Chuyển đổi dữ liệu**  
    Biến đổi dữ liệu với AWS Glue (interactive sessions)  
@@ -252,8 +252,7 @@ Bước 4: Chạy và xem kết quả
 - Nhấn Create role
 - Sử dụng Jupyter Notebook trong AWS Glue cho ETL tương tác
 
-[Ảnh 16](assets/cloud-img-16.png)
-
+<img src="assets\cloud-img-16.png" width="100%">  
 Bước 3: Tạo Glue Job với Jupyter Notebook
 
 - Truy cập Glue Studio → chọn tab Jobs
@@ -262,9 +261,9 @@ Bước 3: Tạo Glue Job với Jupyter Notebook
 - Nhấn Choose file → chọn file analytics-workshop-glueis-notebook.ipynb đã có
 - Nhấn Create
 
-[Ảnh 17](assets/cloud-img-17.png)
+<img src="assets\cloud-img-17.png" width="100%">
 
-[Ảnh 18](assets/cloud-img-18.png)
+<img src="assets\cloud-img-18.png" width="100%">
 
 Bước 4: Cấu hình notebook
 
@@ -276,7 +275,7 @@ Bước 4: Cấu hình notebook
 - Sau khi notebook khởi động, làm theo hướng dẫn trong từng ô của notebook
 - Thực hiện các bước để xử lý dữ liệu từ S3 và lưu kết quả
 
-[Ảnh 19](assets/cloud-img-19.png)
+<img src="assets\cloud-img-19.png" width="100%">
 
 **Kiểm tra dữ liệu đã xử lý**
 
@@ -297,7 +296,7 @@ Bước 4: Cấu hình notebook
   - Trong phần Query result location, nhập đường dẫn đến bucket mới: s3://query-results/
   - Nhấn Save
 
-[Ảnh 20](assets/cloud-img-20.png)
+<img src="assets\cloud-img-20.png" width="100%">
 
 Bước 2: Truy vấn dữ liệu
 
@@ -311,7 +310,7 @@ Bước 2: Truy vấn dữ liệu
 
 - Kết quả: Truy vấn này trả về danh sách nghệ sĩ được nghe nhiều nhất.
 
-[Ảnh 21](assets/cloud-img-21.png)
+<img src="assets\cloud-img-21.png" width="100%">
 
 6. **Kết nối AWS lambda (tạo API) và Athena, S3**  
    Tạo một Hàm Lambda thực hiện truy vấn trên Amazon Athena để lấy ra thông tin khóa học, từ dữ liệu đã xử lý và lưu trữ trên Amazon S3.  
@@ -329,7 +328,7 @@ Bước 2: Truy vấn dữ liệu
 - Trong mục Permissions, mở rộng phần "Choose or create an execution role", đảm bảo chọn Create a new role with basic Lambda permissions.
 - Nhấn Create function
 
-[Ảnh 22](assets/cloud-img-22.png)
+<img src="assets\cloud-img-22.png" width="100%">
 
 **Viết mã cho Lambda**  
 Lambda sẽ sử dụng **boto3** để truy vấn Athena. Boto3 là SDK Python chính thức của AWS.  
@@ -339,7 +338,7 @@ Bước 3: Thay thế mã mặc định
 
 - Kéo xuống phần Function code, thay thế nội dung mặc định trong lambda_function.py bằng đoạn mã Python được cung cấp (bạn có thể chèn đoạn mã sau nếu cần).
 
-[Ảnh 23](assets/cloud-img-23.png)
+<img src="assets\cloud-img-23.png" width="100%">
 
 - Thiết lập cấu hình
   - Memory: giữ nguyên 128 MB
@@ -347,9 +346,9 @@ Bước 3: Thay thế mã mặc định
 - Tags (tuỳ chọn): workshop: AnalyticsOnAWS
 - Nhấn Save
 
-[Ảnh 24](assets/cloud-img-24.png)
+<img src="assets\cloud-img-24.png" width="100%">
 
-[Ảnh 25](assets/cloud-img-25.png)
+<img src="assets\cloud-img-25.png" width="100%">
 
 **Cấp quyền IAM cho Lambda**  
 Bước 4: Thêm IAM Policies
@@ -362,9 +361,9 @@ Bước 4: Thêm IAM Policies
   - AmazonAthenaFullAccess
 - Nhấn Attach policies rồi đóng tab IAM.
 
-  [Ảnh 26](assets/cloud-img-26.png)
+  <img src="assets\cloud-img-26.png" width="100%">
 
-  [Ảnh 27](assets/cloud-img-27.png)
+  <img src="assets\cloud-img-27.png" width="100%">
 
   **Cấu hình và kiểm tra hàm Lambda**
 
@@ -379,11 +378,11 @@ Bước 4: Thêm IAM Policies
 - Nhấn lại Test để chạy thử.
 - Kết quả JSON dưới mục Execution result.
 
-  [Ảnh 28](assets/cloud-img-28.png)
+  <img src="assets\cloud-img-28.png" width="100%">
 
-  [Ảnh 29](assets/cloud-img-29.png)
+  <img src="assets\cloud-img-29.png" width="100%">
 
-  [Ảnh 30](assets/cloud-img-30.png)
+  <img src="assets\cloud-img-30.png" width="100%">
 
 7.  **BI dữ liệu trên QuickSight**
 
@@ -391,10 +390,10 @@ Bước 1: Tạo tài khoản quicksight
 
 Bước 2: Chọn dataset muốn BI
 
-[Ảnh 31](assets/cloud-img-31.png)
+<img src="assets\cloud-img-31.png" width="100%">
 
 Điểm số bài tập theo phân phối từng trường
 
-[Ảnh 32](assets/cloud-img-32.png)
+<img src="assets\cloud-img-32.png" width="100%">
 
 Phân bố điểm của từng nhãn qua các trường
