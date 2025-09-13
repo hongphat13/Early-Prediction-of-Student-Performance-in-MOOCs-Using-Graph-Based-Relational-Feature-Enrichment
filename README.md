@@ -92,8 +92,8 @@ Những đặc trưng này được hòa trộn với tín hiệu hành vi (user
 │   └── system-architecture.png
 │
 ├── cloud/
-│   ├── README.md                     # Hướng dẫn chạy/triển khai trên cloud (gợi ý AWS)
-│   └── Kịch bản xây dựng và sử dụng cloud.docx
+│   ├── README.md                     # Hướng dẫn chạy/triển khai trên cloud AWS
+│   └── assests/
 │
 ├── data/
 │   ├── augmented/                    # Dữ liệu sau khi tăng cường SMOTE/SVM-SMOTE (phase*/fold*, scaler, X_*, y_*)
